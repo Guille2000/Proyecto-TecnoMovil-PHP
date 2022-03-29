@@ -1,0 +1,46 @@
+@use 'mixins' as m;
+@use 'variables' as v; 
+
+.tecno{
+    margin-top:3rem;
+
+    &__heading{
+        text-align:center;
+        margin-bottom:5rem;
+    }
+
+    &__grid{
+        display:flex;
+        flex-direction: column-reverse;
+        @include m.tablet{
+            display:grid;
+            grid-template-columns: 1fr 2fr;
+            align-items: center;
+        }
+    }
+
+}
+.listado{
+
+    &__elemento{
+        box-shadow:0px 0px 15px 3px rgb(0 0 0 /.15);
+        padding:2rem;
+        margin-bottom:1rem;
+        transition-property: transform;
+        transition-duration: 300ms;
+
+        &:hover{
+            transform:scale(1.1);
+        }
+    }
+
+    &__heading{
+        font-size:2rem;
+        color:v.$violeta;
+
+    }
+    &__texto{
+        font-weight:700;
+        margin-top:1rem;
+    }
+}

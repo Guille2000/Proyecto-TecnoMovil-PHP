@@ -1,0 +1,38 @@
+@use 'mixins' as m;
+@use 'variables' as v; 
+.navegacion{
+    visibility: hidden;
+    opacity:0;
+    transition: visibility .3s ease-in-out, opacity 0.5s linear;
+    @include m.tablet{
+        visibility: visible;
+        opacity: 1;
+    }
+     &__link{
+        display:block;
+        text-align: center;
+        color:v.$violeta;
+        font-weight:700;
+        @include m.tablet{
+            color:v.$blanco;
+            display:inline;
+            margin:1.5rem;
+        }
+    }
+}
+/**MENU HAMBURGUESA*/
+
+.mobile-menu{
+   @include m.tablet{
+       display:none;
+   }
+    img{
+        width:5rem;
+        cursor:pointer;
+    }
+}
+.mostrar{
+    visibility: visible;
+    opacity:1;
+}
+
