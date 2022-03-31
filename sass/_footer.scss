@@ -1,0 +1,15 @@
+@use 'mixins' as m;
+@use 'variables' as v; 
+
+.footer{
+    background-color:#5A30A0;
+    margin-top:3rem;
+
+    &__grid{
+        @include m.tablet{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

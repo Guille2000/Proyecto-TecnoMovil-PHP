@@ -14,10 +14,10 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="inicio">
         <div class="header__contenedor">
             <div class="header__barra">
-                    <a href="index.html">
+                <a href="index.html">
                     <img src="img/logo.png" alt="logo de la pagina">
                 </a>
 
@@ -26,16 +26,18 @@
                 </div>
 
                 <nav class="navegacion">
-                    <a href="#" class="navegacion__link">Inicio</a>
-                    <a href="#" class="navegacion__link">Nosotros</a>
-                    <a href="#" class="navegacion__link">Contacto</a>
+                    <a href="#inicio" class="navegacion__link">Inicio</a>
+                    <a href="#nosotros" class="navegacion__link">Nosotros</a>
+                    <a href="#formulario" class="navegacion__link">Formulario</a>
                 </nav>
-            </div> <!---BARRA-->
+            </div>
+            <!---BARRA-->
 
             <div class="header__grid">
                 <div class="header__contenido">
                     <h1 class="header__heading">Venta de los mejores celulares del mercado</h1>
-                    <p class="header__texto">Tenemos 8 años de experiencia en el mercado probamos cada pantalla para asegurar. Somos una
+                    <p class="header__texto">Tenemos 8 años de experiencia en el mercado probamos cada pantalla para
+                        asegurar. Somos una
                         profesional proveedor de todos repuestos para celular en china. </p>
                 </div>
 
@@ -45,7 +47,7 @@
             </div>
         </div>
     </header>
-    <main class="tecno">
+    <main id ="nosotros" class="tecno">
         <h2 class="tecno__heading">¿Qué es?</h2>
         <div class="tecno__contenedor">
             <div class="tecno__grid">
@@ -59,7 +61,8 @@
                     </div>
                     <div class="listado__elemento">
                         <h2 class="listado__heading">Seguro</h2>
-                        <p class="listado__texto">No te pediremos ningún dato, ¡solo tienes que entrar con el usuario que te proporcionamos!</p>
+                        <p class="listado__texto">No te pediremos ningún dato, ¡solo tienes que entrar con el usuario
+                            que te proporcionamos!</p>
                     </div>
                     <div class="listado__elemento">
                         <h2 class="listado__heading">Facil</h2>
@@ -69,7 +72,31 @@
             </div>
         </div>
     </main>
+    <section id="formulario" class="formulario">
 
+        <a href="" class="formulario__btn">Haga click aquí para ir al formulario</a>
+
+        <p class="formulario__texto"><span>Importante:</span>
+            Para poder rellenar el formulario, debe ingresar con los siguientes datos:
+            Usuario: <small>usuario@usuario.com</small>
+            Contraseña: <smal>12345</smal>
+        </p>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__contenedor">
+            <div class="footer__grid">
+                <div class="footer__logo">
+                    <img src="img/logo.png" alt="Logo de la pagina">
+                </div>
+                <nav class="navegacion">
+                    <a href="#" class="navegacion__link navegacion__link--blanco">Inicio</a>
+                    <a href="#" class="navegacion__link navegacion__link--blanco">Nosotros</a>
+                    <a href="#" class="navegacion__link navegacion__link--blanco">Formulario</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
     <script src="js/app.js"></script>
 </body>
 

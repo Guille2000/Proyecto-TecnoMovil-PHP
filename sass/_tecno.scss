@@ -35,12 +35,20 @@
     }
 
     &__heading{
+        text-align:center;
         font-size:2rem;
         color:v.$violeta;
+        @include m.tablet{
+            text-align:left;
+        }
 
     }
     &__texto{
+        text-align:center;
         font-weight:700;
         margin-top:1rem;
+        @include m.tablet{
+            text-align:left;
+        }
     }
 }

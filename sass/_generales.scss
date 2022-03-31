@@ -1,3 +1,5 @@
+@use 'variables' as v; 
+
 *{
     margin:0px;
     padding:0px;
@@ -8,6 +10,60 @@ body{
 }
 a{
     text-decoration: none;
+}
+.text-center{
+    text-align:center;
+}
+.alerta{
+    padding:.5rem;
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    text-transform: uppercase;
+    margin:1rem 0;
+    
+}
+.error{
+    background-color:#D40000;
+}
+.exito{
+    background-color: v.$violeta;
+    display:inline-block;
+}
+table.propiedades{
+    margin-top:4rem;
+    width:100%;
+    border-spacing: 0;
+
+}
+thead{
+    background-color:green;
+
+}
+th{
+    color:white;
+    padding:2rem;
+}
+.imagen-tabla{
+    width:5rem;
+}
+.boton-rojo{
+    display: block;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    width: 140px;
+    transition: all 0.5s;
+    cursor: pointer;
+    padding:10px;
+}
+.imagen-small{
+    width:20rem;
+}
+.w-100{
+    width:100%;
 }
 img{
     max-width:100%;
